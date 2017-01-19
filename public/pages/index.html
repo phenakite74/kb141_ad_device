@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../javascripts/index.js"></script>
+    <h3 id="testtitle"><%= title %> </h3>
+</body>
+
+<script>
+    $.ajax({
+      url:'http://localhost:3000/index/data',
+      dataType : 'text',
+      success : function (data) {
+        console.log(data);
+      }
+    });
+
+</script>
+</html>
